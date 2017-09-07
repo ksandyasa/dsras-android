@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top|center"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_top_navigationmenu"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/header_menu"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="133dp"
+                android:layout_height="95dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_bpom"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_middle1_navigationmenu"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorCustomGreen"
+            >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_middle2_navigationmenu"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/colorCustomGreen"
+            >
+
+            <TextView
+                android:id="@+id/tv_user_navigationmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="USERNAME"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_navigationmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"
+            android:divider="@color/colorCustomLightGrey"
+            android:footerDividersEnabled="true"
+            android:background="@color/colorWhite"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_pict_navigationmenu"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/login_logo"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:layout_anchor="@id/rl_middle1_navigationmenu"
+        app:layout_anchorGravity="center|right|end"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/colorCustomGreen"
+        android:layout_gravity="bottom|center"
+        >
+
+        <TextView
+            android:id="@+id/tv_logout_navigationmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="LOGOUT"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

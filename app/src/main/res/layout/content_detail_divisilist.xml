@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="16dp"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:id="@+id/ll_content1_detail_divisilist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:animateLayoutChanges="true"
+            >
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_border1_detail_divisilist"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorIBO"
+            android:layout_marginTop="32dp"
+            android:visibility="gone">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_content2_detail_divisilist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_border2_detail_divisilist"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorIBO"
+            android:layout_marginTop="32dp"
+            android:visibility="gone">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_content3_detail_divisilist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_content_viewdocument_detail_divisilist"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorCustomGreen"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_viewdocument_detail_divisilist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorWhite"
+                android:text="VIEW DOCUMENT"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

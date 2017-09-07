@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:layout_marginBottom="10dp"
+    android:id="@+id/ll_container_item_divisilist">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_item_divisilist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:contentPadding="16dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_po_item_divisilist"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                >
+
+                <TextView
+                    android:id="@+id/tv_po_item_divisilist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorIBO"
+                    android:text="Nomor PO"
+                    android:maxLines="2"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_date_item_divisilist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/list_item_menu_bg"
+                >
+
+                <TextView
+                    android:id="@+id/tv_date_item_divisilist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:text="03/08/2016"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_timport_item_divisilist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorCustomLightGrey1"
+                android:textSize="12sp"
+                android:text="NAMA IMPORTIR"
+                android:layout_below="@id/rl_po_item_divisilist"
+                android:layout_marginTop="16dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_vimport_item_divisilist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorCustomGrey"
+                android:text="NAMA PERUSAHAAN"
+                android:maxLines="3"
+                android:layout_below="@id/tv_timport_item_divisilist"
+                />
+
+            <TextView
+                android:id="@+id/tv_texport_item_divisilist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorCustomLightGrey1"
+                android:textSize="12sp"
+                android:text="NAMA EXPORTIR"
+                android:layout_below="@id/tv_vimport_item_divisilist"
+                android:layout_marginTop="16dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_vexport_item_divisilist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorCustomGrey"
+                android:text="COMPANY PTY Ltd"
+                android:maxLines="3"
+                android:layout_below="@id/tv_texport_item_divisilist"
+                />
+
+            <TextView
+                android:id="@+id/tv_tproduk_item_divisilist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorCustomLightGrey1"
+                android:textSize="12sp"
+                android:text="NAMA PRODUK"
+                android:layout_below="@id/tv_vexport_item_divisilist"
+                android:layout_marginTop="16dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_vproduk_item_divisilist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorCustomGrey"
+                android:text="PRODUCT NAME"
+                android:maxLines="3"
+                android:layout_below="@id/tv_tproduk_item_divisilist"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
